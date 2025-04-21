@@ -17,16 +17,14 @@ selects.config_setting_group(
 selects.config_setting_group(
     name = "is_unix",
     match_any = [
-        ":is_cross_compiler",
-        "@bazel_tools//src/conditions:darwin",
-        "@bazel_tools//src/conditions:linux_x86_64",
+        "@platforms//os:macos",
+        "@platforms//os:linux",
     ],
 )
 
 selects.config_setting_group(
     name = "is_linux",
     match_any = [
-        ":is_cross_compiler",
-        "@bazel_tools//src/conditions:linux_x86_64",
+        "@platforms//os:linux",
     ],
 )
