@@ -24,6 +24,7 @@ cc_toolchain_config(
     name = cc_toolchain_config_name,
     toolchain_identifier = toolchain_name,
     wrapper_extension = "{wrapper_extension}",
+    target_cpu = "{target_cpu}",
     cxx_builtin_include_directories=cxx_builtin_include_directories
 )
 
