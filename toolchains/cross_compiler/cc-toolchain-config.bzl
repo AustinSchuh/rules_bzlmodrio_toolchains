@@ -173,7 +173,7 @@ def _impl(ctx):
         features = features,
         toolchain_identifier = ctx.attr.toolchain_identifier,
         host_system_name = "local",
-        target_system_name = "arm-frc2023-linux-gnueabi",
+        target_system_name = ctx.attr.target_system_name,
         target_cpu = ctx.attr.target_cpu,
         target_libc = "glibc-2.24",
         cc_target_os = "linux",
@@ -189,6 +189,7 @@ cc_toolchain_config = rule(
     attrs = {
         "cxx_builtin_include_directories": attr.string_list(mandatory = True),
         "target_cpu": attr.string(mandatory = True),
+        "target_system_name": attr.string(mandatory = True),
         "toolchain_identifier": attr.string(mandatory = True),
         "wrapper_extension": attr.string(mandatory = True),
     },

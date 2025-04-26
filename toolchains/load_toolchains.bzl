@@ -9,6 +9,7 @@ def load_toolchains():
         sysroot_subfolder = "bookworm/arm-linux-gnueabihf/sysroot",
         cxx_version = "12",
         target_cpu = "armv7",
+        target_system_name = "arm-linux-gnueabihf",
         sysroot_include_folder = "arm-linux-gnueabihf",
         repo_shortname = "bookworm_32",
     )
@@ -20,6 +21,7 @@ def load_toolchains():
         sysroot_subfolder = "bookworm/aarch64-linux-gnu/sysroot",
         cxx_version = "12",
         target_cpu = "armv8a",
+        target_system_name = "aarch64-linux-gnu",
         sysroot_include_folder = "aarch64-linux-gnu",
         repo_shortname = "bookworm_64",
     )
@@ -31,6 +33,7 @@ def load_toolchains():
         sysroot_subfolder = "bullseye/arm-linux-gnueabihf/sysroot",
         cxx_version = "10",
         target_cpu = "armv7",
+        target_system_name = "arm-linux-gnueabihf",
         sysroot_include_folder = "arm-linux-gnueabihf",
         repo_shortname = "bullseye_32",
     )
@@ -42,6 +45,7 @@ def load_toolchains():
         sysroot_subfolder = "bullseye/aarch64-linux-gnu/sysroot",
         cxx_version = "10",
         target_cpu = "armv8a",
+        target_system_name = "aarch64-linux-gnu",
         sysroot_include_folder = "aarch64-linux-gnu",
         repo_shortname = "bullseye_64",
     )
@@ -53,6 +57,7 @@ def load_toolchains():
         sysroot_subfolder = "raspi-bookworm/arm-linux-gnueabihf/sysroot",
         cxx_version = "12",
         target_cpu = "armv7",
+        target_system_name = "arm-linux-gnueabihf",
         sysroot_include_folder = "arm-linux-gnueabihf",
         repo_shortname = "raspi_bookworm_32",
     )
@@ -64,6 +69,7 @@ def load_toolchains():
         sysroot_subfolder = "raspi-bullseye/arm-linux-gnueabihf/sysroot",
         cxx_version = "10",
         target_cpu = "armv7",
+        target_system_name = "arm-linux-gnueabihf",
         sysroot_include_folder = "arm-linux-gnueabihf",
         repo_shortname = "raspi_bullseye_32",
     )
@@ -75,6 +81,7 @@ def load_toolchains():
         sysroot_subfolder = "roborio-academic/arm-nilrt-linux-gnueabi/sysroot",
         cxx_version = "12",
         target_cpu = "armv7",
+        target_system_name = "arm-nilrt-linux-gnueabi",
         sysroot_include_folder = "arm-nilrt-linux-gnueabi",
         repo_shortname = "roborio",
     )
@@ -86,6 +93,7 @@ def load_toolchains():
         sysroot_subfolder = "bookworm/aarch64-linux-gnu/sysroot",
         cxx_version = "12",
         target_cpu = "armv8a",
+        target_system_name = "aarch64-linux-gnu",
         sysroot_include_folder = "aarch64-linux-gnu",
         repo_shortname = "systemcore",
     )
